@@ -23,7 +23,7 @@ https://templatemo.com/tm-546-sixteen-clothing
  font-size: 14px;
  font-family: ‘Open Sans’;
  font-weight: 600;
- color: #FFFFFF;
+ color: #000000;
  cursor: pointer;
  border-bottom: 1px solid #E44C4C;
 }
@@ -1079,4 +1079,21 @@ footer .inner-content p a {
 		right: 0;
 		bottom: 0;
 	}
+}
+
+body{
+ margin: 0;
+ padding: 0;
+ background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.Cart-Container{
+ width: 70%;
+ height: 85%;
+ background-color: #ffffff;
+ border-radius: 20px;
+ box-shadow: 0px 25px 40px #1687d933;
 }
