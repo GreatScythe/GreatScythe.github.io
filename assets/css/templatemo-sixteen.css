@@ -5,6 +5,28 @@ TemplateMo 546 Sixteen Clothing
 https://templatemo.com/tm-546-sixteen-clothing
 
 */
+.Header{
+ margin: auto;
+ width: 90%;
+ height: 15%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.Heading{
+ font-size: 20px;
+ font-family: ‘Open Sans’;
+ font-weight: 700;
+ color: #FFFFFF;
+}
+.Action{
+ font-size: 14px;
+ font-family: ‘Open Sans’;
+ font-weight: 600;
+ color: #FFFFFF;
+ cursor: pointer;
+ border-bottom: 1px solid #E44C4C;
+}
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
@@ -1057,26 +1079,4 @@ footer .inner-content p a {
 		right: 0;
 		bottom: 0;
 	}
-}
-.Header{
- margin: auto;
- width: 90%;
- height: 15%;
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
-.Heading{
- font-size: 20px;
- font-family: ‘Open Sans’;
- font-weight: 700;
- color: #FFFFFF;
-}
-.Action{
- font-size: 14px;
- font-family: ‘Open Sans’;
- font-weight: 600;
- color: #FFFFFF;
- cursor: pointer;
- border-bottom: 1px solid #E44C4C;
 }
