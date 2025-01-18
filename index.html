@@ -7,19 +7,25 @@
     <style>
         .slideshow-container {
             position: relative;
-            max-width: 100%;
+            width: 350px; /* Largura fixa para combinar com a imagem */
+            height: 200px; /* Altura fixa para combinar com a imagem */
             margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .slides {
             display: none;
             position: absolute;
             width: 100%;
+            height: 100%;
         }
 
         .slides img {
             width: 100%;
-            border-radius: 10px;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -27,17 +33,17 @@
     <div class="slideshow-container">
         <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU8_7KoPoOpcQQ6FisSkvPhCdqdw3Al9Wf3Q&s.slide" target="_blank">
             <div class="slides">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU8_7KoPoOpcQQ6FisSkvPhCdqdw3Al9Wf3Q&s.slide" alt="Imagem 1">
+                <img src="https://via.placeholder.com/350x200.png?text=Imagem+1" alt="Imagem 1">
             </div>
         </a>
         <a href="https://example2.com" target="_blank">
             <div class="slides">
-                <img src="https://via.placeholder.com/800x400.png?text=Imagem+2" alt="Imagem 2">
+                <img src="https://via.placeholder.com/350x200.png?text=Imagem+2" alt="Imagem 2">
             </div>
         </a>
         <a href="https://example3.com" target="_blank">
             <div class="slides">
-                <img src="https://via.placeholder.com/800x400.png?text=Imagem+3" alt="Imagem 3">
+                <img src="https://via.placeholder.com/350x200.png?text=Imagem+3" alt="Imagem 3">
             </div>
         </a>
     </div>
