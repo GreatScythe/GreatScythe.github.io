@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação de Imagens</title>
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .slides {
+            display: none;
+            position: absolute;
+            width: 100%;
+        }
+
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <a href="https://example1.com" target="_blank">
+            <div class="slides">
+                <img src="https://via.placeholder.com/800x400.png?text=Imagem+1" alt="Imagem 1">
+            </div>
+        </a>
+        <a href="https://example2.com" target="_blank">
+            <div class="slides">
+                <img src="https://via.placeholder.com/800x400.png?text=Imagem+2" alt="Imagem 2">
+            </div>
+        </a>
+        <a href="https://example3.com" target="_blank">
+            <div class="slides">
+                <img src="https://via.placeholder.com/800x400.png?text=Imagem+3" alt="Imagem 3">
+            </div>
+        </a>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slides');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = (index === slideIndex) ? 'block' : 'none';
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+        }
+
+        setInterval(showSlides, 2000); // Muda a cada 2 segundos
+        showSlides(); // Mostra a primeira slide imediatamente
+    </script>
+</body>
+</html>
